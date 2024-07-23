@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanna be mine?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        background: rgb(244, 152, 246);
+      }
+      h2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 90px;
+        font-size: 30px;
+        color: #000;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      button {
+        border: none;
+        border-radius: 4px;
+        padding: 10px;
+        font-size: 15px;
+        margin-top: 70px;
+        background: rgb(136, 28, 22);
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+      }
+      button:hover{
+        transform: scale(1.04);
+      }
+      button:nth-child(2) {
+        margin-left: 90px;
+      }
+      .yes{
+        display: none;
+      }
+      .yes img{
+        position: absolute;
+        top: 50px;
+        left: 460px;
+        width: 620px;
+        animation: scaleAnimation 3s infinite; 
+      }
+      .yes p{
+        position: absolute;
+        top: 200px;
+        left: 500px;
+        color: #fff;
+        font-size: 100px;
+        font-weight: 700;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+      @keyframes scaleAnimation {
+        0% {
+          transform: scale(1); /* Normal size */
+        }
+        50% {
+          transform: scale(1.1); /* 50% larger */
+        }
+        100% {
+          transform: scale(1); /* Back to normal size */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Would you like to go on a date with me?</h2>
+    <div class="button">
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+    <div class="yes" id="drake">
+        <img src="drake.jpeg" alt="">
+        <p>I knew it❤️</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
